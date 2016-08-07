@@ -11,6 +11,8 @@ gem 'redactor-rails', '~> 0.5.0'
 #pdf generation
 gem 'prawn', '~> 2.1'
 gem 'prawn-table', '~> 0.2.2'
+#adminsss
+gem 'cancancan', '~> 1.10'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'

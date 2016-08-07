@@ -27,4 +27,16 @@ class User < ActiveRecord::Base
     end
   end
 
+  def to_s
+    "#{email}"
+  end
+
+  def admin?
+    self.admin
+  end
+
+  def regular?
+    !self.admin || self.admin == nil
+  end
+
 end

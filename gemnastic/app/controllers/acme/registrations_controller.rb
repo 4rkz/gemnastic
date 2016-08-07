@@ -45,7 +45,7 @@ class Acme::RegistrationsController < Devise::RegistrationsController
 
   # If you have extra params to permit, append them to the sanitizer.
   def configure_account_update_params
-    devise_parameter_sanitizer.permit(:account_update, keys: [:email, :nickname, :current_password, :password, :password_confirmation])
+    devise_parameter_sanitizer.permit(:account_update, keys: [:admin, :email, :nickname, :current_password, :password, :password_confirmation])
   end
 
   # The path used after sign up.
