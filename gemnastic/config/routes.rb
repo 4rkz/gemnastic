@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RedactorRails::Engine => '/redactor_rails'
   resources :posts
   devise_for :users, controllers: { omniauth_callbacks: "acme/omniauth_callbacks", registrations: "acme/registrations" }
 
