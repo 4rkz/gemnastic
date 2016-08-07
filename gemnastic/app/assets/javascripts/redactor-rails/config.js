@@ -20,3 +20,4 @@ window.init_redactor = function(){
 }
 
 $(document).on( 'ready page:load', window.init_redactor );
+//= require redactor-rails
