@@ -17,7 +17,7 @@ def show
         send_data pdf.render, filename: 'report.pdf', type: 'application/pdf'
       end
     end
-  end
+end
 
   # GET /posts/new
   def new
